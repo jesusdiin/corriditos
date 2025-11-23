@@ -1,113 +1,138 @@
 <template>
-  <div class="min-h-screen bg-neutral-950 text-neutral-100 overflow-x-hidden">
-    <!-- Header -->
-    <header class="w-full flex items-center justify-between px-6 py-4 border-b border-neutral-800">
-      <h1 class="text-2xl font-bold tracking-tight">EcoCore</h1>
+  <div class="min-h-screen bg-neutral-950 text-neutral-100 flex flex-col overflow-x-hidden">
 
-      <nav class="hidden md:flex gap-6 text-sm">
-        <a href="#features" class="hover:text-green-400 transition">Características</a>
-        <a href="#screens" class="hover:text-green-400 transition">Interfaz</a>
-        <a href="#download" class="hover:text-green-400 transition">Descargar</a>
-      </nav>
+    <!-- HEADER -->
+    <header class="w-full fixed top-0 left-0 z-50 backdrop-blur-xl bg-neutral-900/60 border-b border-neutral-800">
+      <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+        <h1 class="text-xl font-bold tracking-tight">Eco Core</h1>
 
-      <button class="md:hidden" @click="mobileOpen = !mobileOpen">
-        <span class="i-lucide-menu text-2xl"></span>
-      </button>
-    </header>
-
-    <!-- Mobile Menu -->
-    <transition name="fade">
-      <div
-        v-if="mobileOpen"
-        class="md:hidden flex flex-col gap-4 bg-neutral-900 p-6 border-b border-neutral-800"
-      >
-        <a href="#features" class="hover:text-green-400 transition">Características</a>
-        <a href="#screens" class="hover:text-green-400 transition">Interfaz</a>
-        <a href="#download" class="hover:text-green-400 transition">Descargar</a>
-      </div>
-    </transition>
-
-    <!-- Hero -->
-    <section class="px-6 py-20 flex flex-col md:flex-row items-center justify-between gap-14">
-      <div class="max-w-xl space-y-6">
-        <h2 class="text-5xl font-bold leading-tight">
-          Tu app para impulsar el <span class="text-green-400">reciclaje inteligente</span>
-        </h2>
-        <p class="text-neutral-400 text-lg">
-          EcoCore te ayuda a encontrar centros de reciclaje, gestionar tus materiales,
-          y participar en una comunidad más sustentable.
-        </p>
+        <nav class="hidden md:flex gap-6 text-neutral-300 text-sm">
+          <a href="#preview" class="hover:text-green-400 transition">Vista previa</a>
+          <a href="#features" class="hover:text-green-400 transition">Características</a>
+          <a href="#download" class="hover:text-green-400 transition">Descargar</a>
+        </nav>
 
         <a
           href="#download"
-          class="inline-block bg-green-500 text-black font-semibold px-6 py-3 rounded-xl hover:bg-green-400 transition text-lg"
+          class="px-4 py-2 rounded-xl text-sm font-semibold bg-green-500 hover:bg-green-600 transition shadow-lg hover:shadow-green-500/20"
+        >
+          Descargar
+        </a>
+      </div>
+    </header>
+
+
+    <!-- HERO SIN IMÁGENES → SOLO FORMAS, GLOW Y ANIMACIONES -->
+    <section class="relative pt-32 pb-24 flex flex-col items-center text-center px-6 overflow-hidden">
+
+      <!-- Glow dinámico -->
+      <div class="absolute -top-40 w-[600px] h-[600px] bg-green-500/20 blur-[160px] rounded-full animate-pulse-slow"></div>
+
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight animate-fade-in-up">
+        Eco Core
+      </h1>
+
+      <p class="text-neutral-300 text-lg md:text-xl max-w-xl mt-4 animate-fade-in-up delay-200">
+        Una experiencia sustentable. Moderna. Rápida. Diseñada para impactar.
+      </p>
+
+      <div class="mt-8 flex gap-4 animate-fade-in-up delay-300">
+        <a
+          href="#download"
+          class="px-8 py-4 rounded-2xl text-lg font-semibold bg-green-500 hover:bg-green-600 transition-all shadow-xl hover:shadow-green-500/30"
         >
           Descargar APK
         </a>
+        <a
+          href="#features"
+          class="px-8 py-4 rounded-2xl text-lg font-semibold bg-neutral-900 border border-neutral-800 hover:bg-neutral-800 transition-all"
+        >
+          Ver Más
+        </a>
       </div>
 
-      <div class="w-full md:w-auto">
-        <div class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4 shadow-xl">
-          <img
-            src="/mockup-phone.png"
-            alt="App Mockup"
-            class="w-72 md:w-96 drop-shadow-2xl"
-          />
+      <!-- Figura decorativa 3D-like -->
+      <div class="mt-20 w-64 h-64 bg-gradient-to-br from-neutral-900 to-neutral-800 border border-neutral-700 rounded-3xl shadow-2xl shadow-green-500/10 rotate-3 hover:rotate-0 transition duration-700 animate-float"></div>
+    </section>
+
+
+    <!-- FEATURES SIN IMÁGENES -->
+    <section id="features" class="px-6 py-24 flex flex-col items-center">
+      <h2 class="text-3xl font-semibold mb-14">¿Por qué Eco Core?</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
+
+        <div class="p-8 bg-neutral-900 rounded-2xl border border-neutral-800 hover:border-green-500 hover:shadow-lg hover:shadow-green-500/20 transition-all">
+          <h3 class="text-xl font-bold mb-2">Moderna</h3>
+          <p class="text-neutral-400">Estructura ligera, rápida y lista para producción.</p>
         </div>
+
+        <div class="p-8 bg-neutral-900 rounded-2xl border border-neutral-800 hover:border-green-500 hover:shadow-lg hover:shadow-green-500/20 transition-all">
+          <h3 class="text-xl font-bold mb-2">Interacción sutil</h3>
+          <p class="text-neutral-400">Animaciones suaves, figuras dinámicas y diseño vivo.</p>
+        </div>
+
+        <div class="p-8 bg-neutral-900 rounded-2xl border border-neutral-800 hover:border-green-500 hover:shadow-lg hover:shadow-green-500/20 transition-all">
+          <h3 class="text-xl font-bold mb-2">Sin imágenes</h3>
+          <p class="text-neutral-400">Todo generado por CSS, limpio y ultrarrápido.</p>
+        </div>
+
       </div>
     </section>
 
-    <!-- Features -->
-    <section id="features" class="px-6 py-24 border-t border-neutral-800">
-      <h3 class="text-center text-4xl font-bold mb-16">Características principales</h3>
 
-      <div class="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
-        <div class="p-6 bg-neutral-900 border border-neutral-800 rounded-2xl">
-          <h4 class="text-xl font-semibold mb-2">Centros cercanos</h4>
-          <p class="text-neutral-400">Encuentra recicladoras cerca de ti con datos actualizados.</p>
-        </div>
-
-        <div class="p-6 bg-neutral-900 border border-neutral-800 rounded-2xl">
-          <h4 class="text-xl font-semibold mb-2">Registro de materiales</h4>
-          <p class="text-neutral-400">Lleva control de lo que reciclas fácilmente.</p>
-        </div>
-
-        <div class="p-6 bg-neutral-900 border border-neutral-800 rounded-2xl">
-          <h4 class="text-xl font-semibold mb-2">Comunidad sustentable</h4>
-          <p class="text-neutral-400">Conecta con otros usuarios y comparte tus logros.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Download -->
-    <section id="download" class="px-6 py-24 border-t border-neutral-800 text-center">
-      <h3 class="text-4xl font-bold mb-6">Descargar la aplicación</h3>
-      <p class="text-neutral-400 mb-10 max-w-xl mx-auto">
-        Disponible en formato APK para Android. Muy pronto en App Store y Play Store.
-      </p>
+    <!-- DOWNLOAD SECTION -->
+    <section id="download" class="text-center py-24 px-6">
+      <h2 class="text-3xl font-semibold mb-6">Descargar Eco Core</h2>
+      <p class="text-neutral-400 max-w-md mx-auto mb-10">Descarga la versión más reciente en un clic.</p>
 
       <a
-        href="/app-release.apk"
-        class="inline-block bg-green-500 text-black font-semibold px-8 py-4 rounded-xl hover:bg-green-400 transition text-lg"
+        href="/eco-core.apk"
+        download
+        class="px-10 py-4 rounded-2xl text-lg font-semibold bg-green-500 hover:bg-green-600 transition-all shadow-xl hover:shadow-green-500/30"
       >
         Descargar APK
       </a>
     </section>
+
+
+    <!-- FOOTER -->
+    <footer class="py-10 text-center text-neutral-500 text-sm">
+      © 2025 Eco Core — Innovando por un futuro sostenible.
+    </footer>
+
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-const mobileOpen = ref(false)
+// No JS por ahora
 </script>
 
-<style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity .25s ease;
+<style>
+@keyframes fade-in-up {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease forwards;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 6s ease-in-out infinite;
 }
 </style>

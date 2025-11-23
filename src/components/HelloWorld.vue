@@ -62,20 +62,14 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
 
-        <div class="p-8 bg-neutral-900 rounded-2xl border border-neutral-800 hover:border-green-500 hover:shadow-lg hover:shadow-green-500/20 transition-all">
-          <h3 class="text-xl font-bold mb-2">Moderna</h3>
-          <p class="text-neutral-400">Estructura ligera, rápida y lista para producción.</p>
-        </div>
+      
 
         <div class="p-8 bg-neutral-900 rounded-2xl border border-neutral-800 hover:border-green-500 hover:shadow-lg hover:shadow-green-500/20 transition-all">
-          <h3 class="text-xl font-bold mb-2">Interacción sutil</h3>
-          <p class="text-neutral-400">Animaciones suaves, figuras dinámicas y diseño vivo.</p>
+          <h3 class="text-xl font-bold mb-2">Gestión inteligente</h3>
+          <p class="text-neutral-400">Del escombro al Activo Digital.</p>
         </div>
 
-        <div class="p-8 bg-neutral-900 rounded-2xl border border-neutral-800 hover:border-green-500 hover:shadow-lg hover:shadow-green-500/20 transition-all">
-          <h3 class="text-xl font-bold mb-2">Sin imágenes</h3>
-          <p class="text-neutral-400">Todo generado por CSS, limpio y ultrarrápido.</p>
-        </div>
+       
 
       </div>
     </section>

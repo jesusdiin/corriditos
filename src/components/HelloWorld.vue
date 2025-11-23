@@ -86,13 +86,10 @@
       <h2 class="text-3xl font-semibold mb-6">Descargar Eco Core</h2>
       <p class="text-neutral-400 max-w-md mx-auto mb-10">Descarga la versión más reciente en un clic.</p>
 
-      <a
-        href="/eco-core.apk"
-        download
-        class="px-10 py-4 rounded-2xl text-lg font-semibold bg-green-500 hover:bg-green-600 transition-all shadow-xl hover:shadow-green-500/30"
-      >
-        Descargar APK
-      </a>
+     <a
+href="https://drive.google.com/file/d/1Bm02B1J50hghqufy3C3sBeMZxRyFdt88/view?usp=sharing"
+class="px-10 py-4 rounded-2xl text-lg font-semibold bg-green-500 hover:bg-green-600 transition-all shadow-xl hover:shadow-green-500/30"
+> Descargar APK</a>
     </section>
 
 

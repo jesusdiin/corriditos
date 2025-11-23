@@ -52,7 +52,7 @@
       </div>
 
       <!-- Figura decorativa 3D-like -->
-      <div class="mt-20 w-64 h-64 bg-gradient-to-br from-neutral-900 to-neutral-800 border border-neutral-700 rounded-3xl shadow-2xl shadow-green-500/10 rotate-3 hover:rotate-0 transition duration-700 animate-float"></div>
+      <div class="mt-20 w-64 h-64  from-neutral-900 to-neutral-800 border border-neutral-700 rounded-3xl shadow-2xl shadow-green-500/10 rotate-3 hover:rotate-0 transition duration-700 animate-float"></div>
     </section>
 
 

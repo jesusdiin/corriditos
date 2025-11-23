@@ -52,7 +52,13 @@
       </div>
 
       <!-- Figura decorativa 3D-like -->
-      <div class="mt-20 w-64 h-64  from-neutral-900 to-neutral-800 border border-neutral-700 rounded-3xl shadow-2xl shadow-green-500/10 rotate-3 hover:rotate-0 transition duration-700 animate-float"></div>
+<div class=" p-4  rounded-3xl  shadow-green-500/10 rotate-3 hover:rotate-0 transition duration-700 animate-float">
+  <img 
+    src="/mockup.png"
+    alt="Mockup de la app"
+    class="w-full h-auto rounded-2xl"
+  />
+</div>
     </section>
 
 
